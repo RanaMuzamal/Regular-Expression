@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="InputText" cols="30" rows="4">The quick brown fox jumps over the lazy dog.</textarea>
+  <br>
+    <input type="button" value="no. of words"  onclick="count()">
+    <input type="text" id="noofWord" value="">
+    <script>
+        function count(){
+            str1=document.getElementById("InputText").value;
+            str1=str1.replace(/(^\s*)|(\s*$)/gi,"");
+            str1=str1.replace(/[ ]{2,}/gi," ");
+            str1=str1.replace(/\n /,"\n");
+            document.getElementById('noofWord').value=str1.split(' ').length
+        }
+    </script>
+</body>
+</html>
