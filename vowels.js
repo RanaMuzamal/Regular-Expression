@@ -1,4 +1,4 @@
-var a="dfjekjdvcgdjovksjdopbkcdpowsbjkqjjbjzsdwcxkkjcx hj ko jkqws kkc jks jxkqk";
-function vowel(x){
-    This is updated file
+function vowelCount(str){
+    return str.match(/[aeiou]/ge).length;
 }
+vowelCount("ssdhadhvjsdjkcsakjcxasjcxbcsdjac csdcjcasdsc dcdjcvdjc");
